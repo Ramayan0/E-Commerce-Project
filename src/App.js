@@ -1,12 +1,13 @@
 import React from "react";
-import Product from "./components/Product";
+import ProductList from "./components/ProductList";
 // import { Route, Switch } from "react-router-dom";
 import NavBar from "./components/NavBar";
+
 const App = () => {
   return (
     <div>
       <NavBar />
-      <Product />
+      <ProductList />
     </div>
   );
 };

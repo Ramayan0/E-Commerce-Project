@@ -10,10 +10,10 @@ function NavBar() {
         marginBottom: "12px",
       }}
     >
-      <NavLink style={{ marginRight: "10px" }} to="/">
+      {/* <NavLink style={{ marginRight: "10px" }} to="/">
         Home
-      </NavLink>
-      <NavLink style={{ marginRight: "10px" }} to="/movies">
+      </NavLink> */}
+      <NavLink style={{ marginRight: "10px" }} to="/product">
         Product
       </NavLink>
     </div>

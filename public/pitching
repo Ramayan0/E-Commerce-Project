@@ -1,0 +1,9 @@
+The app will be an ecommerce for displaying products of an enterprenue and help the users to go through the product at their own comfort.
+
+a user can view the product, filter accordinng to category they want, search throgh the item and add to cart.
+
+i will get a dummy data and deploy API to heruko
+
+components = app, NaBar, search, home, product,
+routes = home, product
+challenges = incooperating the routers and filtering according to category
