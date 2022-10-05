@@ -1,13 +1,18 @@
 import React from "react";
 import ProductList from "./components/ProductList";
-// import { Route, Switch } from "react-router-dom";
+import { BrowserRouter as Routers, Route, Routes } from "react-router-dom";
 import NavBar from "./components/NavBar";
 
 const App = () => {
   return (
-    <div>
-      <NavBar />
-      <ProductList />
+    <div className="App">
+      <Routers>
+        <NavBar />
+        <Routes>
+          {/* <Route exact path="/" element={<Home />}></Route> */}
+          <Route exact path="/" element={<ProductList />}></Route>
+        </Routes>
+      </Routers>
     </div>
   );
 };
