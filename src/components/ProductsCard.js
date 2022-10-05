@@ -5,7 +5,7 @@ import "./Card.css";
 
 function ProductsCard({ product }) {
   return (
-    <div className="col">
+    <div className="col" id="allCard">
       <div className="card" style={{ width: 18 + "rem" }}>
         <img src={product.image} alt="" className="image" />
         <div className="card-body"></div>
@@ -15,7 +15,7 @@ function ProductsCard({ product }) {
           <h4>Description:{product.description}</h4>
           <h4>Catgory:{product.category}</h4>
           <div>
-            <button>Add to Cart</button>
+            <button id="button">Add to Cart</button>
           </div>
         </div>
       </div>

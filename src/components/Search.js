@@ -3,16 +3,16 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import "./Search.css";
-function Search({onSearching}) {
+function Search({ onSearching }) {
   const [search, setSearch] = useState("");
 
-function handleChange(e){
-  setSearch(e.target.value)
-  onSearching(search)
-}
+  function handleChange(e) {
+    setSearch(e.target.value);
+    onSearching(search);
+  }
 
   return (
-    <div>
+    <div id="search">
       <form id="search-form" onChange={handleChange}>
         <input
           value={search}
