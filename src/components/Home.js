@@ -3,7 +3,7 @@ import "./Header.css";
 
 function Home() {
   return (
-    <div classNameName="home">
+    <div className="home">
       <div
         id="carouselExampleIndicators"
         class="carousel slide"
