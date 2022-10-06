@@ -6,6 +6,9 @@ function NavBar() {
   return (
     <div className="navbar">
       <li>
+        <Link className="nav-link" to="/home">
+          Home
+        </Link>
         <Link className="nav-link" to="/">
           Products
         </Link>

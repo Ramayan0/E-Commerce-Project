@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
 import ProductsCard from "./ProductsCard";
-import Search from "./Search";
+// import Search from "./Search";
 import "./ProductList.css";
+import NavBar from "./NavBar";
+import Header from "./Header";
+import Home from "./Home";
 
 function ProductList() {
   const [productListData, setProductListData] = useState([]);
@@ -36,7 +39,10 @@ function ProductList() {
 
   return (
     <div id="all">
-      <Search onSearching={handleSearching} />
+      <Header onSearching={handleSearching} />
+      <NavBar />
+      <Home />
+      {/* <Search onSearching={handleSearching} /> */}
       <br></br>
       <div id="box">
         <button

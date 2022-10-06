@@ -1,14 +1,18 @@
 #search-form {
   display: flex;
-  width: 50%;
-  border: 2px solid rgb(71, 170, 170);
-  margin: 5px 0;
-  height: 40px;
+  width: 100%;
+  /* border: 2px solid rgb(71, 170, 170); */
+  /* margin: 3px 0; */
+  height: 60px;
   border-radius: 10px;
-  padding: 4px;
+  /* padding: 4px; */
   justify-content: space-between;
   align-items: center;
 }
+/* #search {
+  display: flex;
+  border-radius: 10px;
+} */
 
 body {
   text-align: center;
@@ -16,9 +20,10 @@ body {
 
 #search-form-button {
   background: transparent;
-  border: none;
+  /* border: none; */
+  /* border-radius: 10px; */
 
   outline: none;
-  font-size: 26px;
+  font-size: 26x;
   cursor: pointer;
 }
