@@ -10,7 +10,7 @@ function Search({ onSearching }) {
     setSearch(e.target.value);
     onSearching(search);
   }
-
+  // console.log(setSearch);
   return (
     <div id="search">
       <form id="search-form" onChange={handleChange}>

@@ -15,8 +15,9 @@ function Header({ onSearching }) {
 
   function handleChange(e) {
     setSearch(e.target.value);
-    onSearching(search);
+    // onSearching(search);
   }
+  // console.log("render");
 
   return (
     <div className="header">
@@ -26,10 +27,11 @@ function Header({ onSearching }) {
       </Link>
 
       <div id="search">
-        <form id="search-form" onChange={handleChange}>
+        <form id="search-form">
           <input
             value={search}
-            type={"text"}
+            onChange={handleChange}
+            type="text"
             placeholder="Search Product...."
           ></input>
           <button id="search-form-button">

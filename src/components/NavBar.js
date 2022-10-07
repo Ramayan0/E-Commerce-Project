@@ -12,6 +12,9 @@ function NavBar() {
         <NavLink className="nav-link" to="/" exact>
           Products
         </NavLink>
+        <NavLink className="nav-link" to="/" exact>
+          Add-Product
+        </NavLink>
       </li>
     </div>
   );

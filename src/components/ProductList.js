@@ -5,8 +5,9 @@ import "./ProductList.css";
 import NavBar from "./NavBar";
 import Header from "./Header";
 import Home from "./Home";
-
+import Form from "./Form";
 function ProductList() {
+  const [product, setProduct] = useState();
   const [productListData, setProductListData] = useState([]);
   const baseUrl = "https://polar-tundra-37099.herokuapp.com/products";
 
@@ -37,11 +38,28 @@ function ProductList() {
     );
   }
 
+  const handleAddData = (data) => {
+    // let id = productListData.length + 1;
+    // let newProduct = { ...data, id: id };
+    // console.log("add ~Something", newProduct);
+    fetch(baseUrl, {
+      method: "POST",
+      headers: {
+        "Content-types": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+    .then((res) => res.json)
+    .then((newProduct)=> setProduct( ...product,newProduct))
+  };
+
   return (
     <div id="all">
       <Header onSearching={handleSearching} />
       <NavBar />
+      <Form addProduct={handleAddData} />
       <Home />
+
       {/* <Search onSearching={handleSearching} /> */}
       <br></br>
       <div id="box">
