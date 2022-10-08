@@ -1,6 +1,7 @@
 .navbar {
   margin: 0px;
   width: auto;
+  background-color: rgb(192, 185, 185);
 }
 .nav-link {
   display: flex;
