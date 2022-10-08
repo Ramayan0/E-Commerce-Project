@@ -15,7 +15,14 @@ function ProductsCard({ product }) {
           <h4>Description:{product.description}</h4>
           <h4>Catgory:{product.category}</h4>
           <div>
-            <button id="button">Add to Cart</button>
+            <button
+              id="button"
+              onClick={() => {
+                alert("Your Product Has Been Added to Cart");
+              }}
+            >
+              Add to Cart
+            </button>
           </div>
         </div>
       </div>

@@ -23,7 +23,6 @@ function Header({ onSearching }) {
     <div className="header">
       <Link to="/">
         {/* <h4 style={{ color: "black" }}>Remy Luxe Store</h4> */}
-        <img src={require("./Remy.png")} className="img" alt="" />
       </Link>
 
       <div id="search">

@@ -53,8 +53,9 @@ function ProductList() {
   return (
     <div id="all">
       <Header onSearching={handleSearching} />
-
+      <br></br>
       <Form addProduct={handleAddData} />
+      <br></br>
       <Home />
 
       {/* <Search onSearching={handleSearching} /> */}
