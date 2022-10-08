@@ -15,7 +15,7 @@ function Header({ onSearching }) {
 
   function handleChange(e) {
     setSearch(e.target.value);
-    // onSearching(search);
+    onSearching(search);
   }
   // console.log("render");
 
@@ -23,7 +23,7 @@ function Header({ onSearching }) {
     <div className="header">
       <Link to="/">
         {/* <h4 style={{ color: "black" }}>Remy Luxe Store</h4> */}
-        <img src={require("./Remy.png")} className="img" />
+        <img src={require("./Remy.png")} className="img" alt="" />
       </Link>
 
       <div id="search">

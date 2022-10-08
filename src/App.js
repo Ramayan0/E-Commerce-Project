@@ -1,17 +1,20 @@
 import React from "react";
 import ProductList from "./components/ProductList";
-import { Route, Switch, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Home from "./components/Home";
-// import NavBar from "./components/NavBar";
+import Form from "./components/Form";
+import NavBar from "./components/NavBar";
 const App = () => {
   return (
     <div className="App">
-      <Routes>
-        <Route exact path="/home" element={<Home />} />
-
-        {/* <Route exact path="/" element={<Home />}></Route> */}
-        <Route exact path="/" element={<ProductList />} />
-      </Routes>
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/addProduct" element={<Form />} />
+          <Route exact path="/products" element={<ProductList />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 };

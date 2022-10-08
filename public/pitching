@@ -1,6 +1,6 @@
 The app will be an ecommerce for displaying products of an enterprenue and help the users to go through the product at their own comfort.
 
-a user can view the product, filter accordinng to category they want, search throgh the item and add to cart.
+a user can view the product, filter accordinng to category they want, search throgh the item and add product.
 
 i will get a dummy data and deploy API to heruko
 

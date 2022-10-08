@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ProductsCard from "./ProductsCard";
 // import Search from "./Search";
 import "./ProductList.css";
-import NavBar from "./NavBar";
+
 import Header from "./Header";
 import Home from "./Home";
 import Form from "./Form";
@@ -39,24 +39,21 @@ function ProductList() {
   }
 
   const handleAddData = (data) => {
-    // let id = productListData.length + 1;
-    // let newProduct = { ...data, id: id };
-    // console.log("add ~Something", newProduct);
     fetch(baseUrl, {
       method: "POST",
       headers: {
-        "Content-types": "application/json",
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
     })
-    .then((res) => res.json)
-    .then((newProduct)=> setProduct( ...product,newProduct))
+      .then((res) => res.json())
+      .then((newProduct) => setProduct([...product, newProduct]));
   };
 
   return (
     <div id="all">
       <Header onSearching={handleSearching} />
-      <NavBar />
+
       <Form addProduct={handleAddData} />
       <Home />
 
