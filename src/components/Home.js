@@ -25,13 +25,13 @@ function Home() {
               src={require("./men.jpg")}
               alt="First slide"
             />
-            <div class="carousel-caption d-none d-md-block">
+            {/* <div class="carousel-caption d-none d-md-block">
               <h5>My Caption Title (1st Image)</h5>
               <p>
                 The whole caption will only show up if the screen is at least
                 medium size.
               </p>
-            </div>
+            </div> */}
           </div>
           <div class="carousel-item">
             <img

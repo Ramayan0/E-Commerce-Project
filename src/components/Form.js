@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// import Footer from "./Footer";
 
 function Form({ addProduct }) {
   const [image, setImage] = useState("");
