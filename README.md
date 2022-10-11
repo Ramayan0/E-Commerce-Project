@@ -8,6 +8,6 @@ Project Description: It allows user to check products at their own comfort, Sear
 
 The base URL for the API is https://polar-tundra-37099.herokuapp.com/products
 
-live link the Application can be accessed using
+live link for the Application can be accessed using https://ramayan0.github.io/E-Commerce-Project/
 
 Technologies used are HTML, CSS, JS and React
