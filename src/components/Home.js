@@ -18,9 +18,10 @@ function Home() {
           <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
           <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
-        <div className="carousel-inner" >
+        <div className="carousel-inner">
           <div className="carousel-item active">
-            <img id="images"
+            <img
+              id="images"
               className="d-block w-100"
               src={require("./men.jpg")}
               alt="First slide"
